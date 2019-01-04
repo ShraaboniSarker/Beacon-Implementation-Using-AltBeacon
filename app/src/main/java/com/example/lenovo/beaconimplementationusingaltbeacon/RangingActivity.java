@@ -37,7 +37,7 @@ public class RangingActivity extends AppCompatActivity implements BeaconConsumer
             @Override
             public void didRangeBeaconsInRegion(Collection<Beacon> beacons, Region region) {
                 if (beacons.size() > 0) {
-                    Log.i(TAG, "The first beacon I see is about "+beacons.iterator().next().getDistance()+" meters away.");
+                    Log.i(TAG, "The_first_beacon_I_see_is_about_"+beacons.iterator().next().getDistance()+" meters away.");
                     Toast.makeText(RangingActivity.this, "hoise mama", Toast.LENGTH_SHORT).show();}
             }
         });

@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
     protected static final String TAG = "MonitoringActivity";
     private BeaconManager beaconManager;
     Button clickMe;
+    private static final int PERMISSION_REQUEST_COARSE_LOCATION = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer {
                 startActivity(new Intent(MainActivity.this,RangingActivity.class));
             }
         });
+
     }
     @Override
     protected void onDestroy() {
